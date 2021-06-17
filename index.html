@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+
+  <title>Homework</title>
+
+  <meta name="description" content="Homework v1.0" />
+  <meta name="keywords" content="js, jquery, scroll, plugin, animation" />
+  <meta name="author" content="Joe" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+
+  <!-- Facebook Stuff -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Midnight.js" />
+  <meta property="og:title" content="Midnight.js - Switch fixed headers on the fly" />
+  <meta property="og:description" content="Midnight.js is a jQuery plugin that lets you subtly change your headers to make them match the content as you scroll." />
+  <meta property="og:image" content="http://aerolab.github.io/midnight.js/assets/images/midnight-facebook.png" />
+  <meta property="og:url" content="http://aerolab.github.io/midnight.js" />
+  <meta property="fb:app_id" content="344819049029949" />
+
+
+  <link rel="icon" href="assets/images/favicon.ico" type="image/icon" />
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+  <meta name="X-UA-Compatible" content="IE=edge" />
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,300italic,400bold" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-21195039-3', 'aerolab.github.io');
+    ga('require', 'displayfeatures');
+    ga('require', 'linkid', 'linkid.js');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+<body>
+
+  <!-- Our super awesome changing header! -->
+  <nav class="fixed">
+    <div class="midnightHeader default">
+      <div class="logo-holder">
+        <a class="logo"><span class="screenreader"></span></a>
+      </div>
+    </div>
+  </nav>
+  
+
+  <div class="first-background" data-midnight="aaa">
+     <nav class="menu">
+  <ul class="top">
+      <li><a href="#"><span>首頁</span>HOME</a></li>
+      <li><a href="#"><span>關於我們</span>ABOUT</a></li>
+      <li><a href="#"><span>聯絡我們</span>CONTACT</a></li>
+  </ul>
+  </nav>
+
+  </div>
+
+
+  <section class="step step-one" data-midnight="blue">
+
+    <div class="container">
+      <div class="instructions wow fadeInLeft">
+        <div class="content">
+        <h2>春季穿搭</h2>
+        <a class="button" href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=street%20wear%20photography&eq=wear%20photography&etslf=2493&term_meta[]=street%7Cautocomplete%7C3&term_meta[]=wear%7Cautocomplete%7C3&term_meta[]=photography%7Cautocomplete%7C3">More</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="step step-two" data-midnight="light">
+
+    <div class="container">
+      <div class="instructions wow fadeInLeft">
+        <div class="content">
+        <h2>夏季穿搭</h2>
+        <a class="button" href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=street%20wear%20photography&eq=wear%20photography&etslf=2493&term_meta[]=street%7Cautocomplete%7C3&term_meta[]=wear%7Cautocomplete%7C3&term_meta[]=photography%7Cautocomplete%7C3">More</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="step step-three" data-midnight="dark">
+
+    <div class="container">
+      <div class="instructions wow fadeInLeft">
+        <div class="content">
+        <h2>秋季穿搭</h2>
+        <a class="button" href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=street%20wear%20photography&eq=wear%20photography&etslf=2493&term_meta[]=street%7Cautocomplete%7C3&term_meta[]=wear%7Cautocomplete%7C3&term_meta[]=photography%7Cautocomplete%7C3">More</a>
+        </div>
+      </div>
+
+      
+    </div>
+
+  </section>
+
+
+
+  <section class="step step-four" data-midnight="lighter">
+
+    <div class="container">
+      <div class="instructions wow fadeInLeft">
+       <div class="content">
+           <h2>冬季穿搭</h2>
+            <a class="button" href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=street%20wear%20photography&eq=wear%20photography&etslf=2493&term_meta[]=street%7Cautocomplete%7C3&term_meta[]=wear%7Cautocomplete%7C3&term_meta[]=photography%7Cautocomplete%7C3">More</a>
+       </div>
+      </div>
+
+      
+    </div>
+
+  </section>
+
+  <footer class="last-background" data-midnight="aaa">
+      <p style="margin-bottom: 0;">2021©作品集</p>
+  </footer>
+
+  <script src="assets/js/jquery-1.11.1.min.js"></script>
+  <script src="assets/js/sscr.min.js"></script>
+  <script src="assets/js/prism.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/viewport-units-buggyfill.js"></script>
+  <script src="midnight.jquery.min.js"></script>
+  <script>
+
+
+
+    $(document).ready(function(){
+      // vh fix for iOS7 (Not that it works well on that anyway)
+      viewportUnitsBuggyfill.init();
+
+      $(window).resize(function(){
+        viewportUnitsBuggyfill.refresh();
+      });
+
+      // Start Midnight!
+      $('nav.fixed').midnight();
+
+      // Start wow.js
+      new WOW().init();
+
+      // The island disappears when the logo moves on top of it
+      var $island = $('#space-island');
+      var islandTop = $island.offset().top;
+      var windowHeight = $(window).height();
+
+      $(window).resize(function(){
+        islandTop = $island.offset().top;
+        windowHeight = $(window).height();
+      });
+
+      $(document).scroll(function(){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var minScrollTop = islandTop - windowHeight * 0.4;
+        var maxScrollTop = islandTop;
+
+        // Opacity goes from 1.0 at the bottom 2/3 of the screen to 0.4 at the top
+        if( scrollTop <= islandTop*2 ) {
+          var targetOpacity = 1.0;
+          var minOpacity = 0.4;
+
+          if( scrollTop > minScrollTop && scrollTop < maxScrollTop ) {
+            targetOpacity = ((maxScrollTop - scrollTop) / (maxScrollTop - minScrollTop)) * (1.0 - minOpacity) + minOpacity;
+          }
+          else if( scrollTop > maxScrollTop ) {
+            targetOpacity = minOpacity;
+          }
+          else if( scrollTop < minScrollTop ) {
+            targetOpacity = 1.0;
+          }
+
+          $island.css('opacity', targetOpacity);
+        }
+
+      });
+
+      $('.scroll-prompt').click(function(event){
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: $("section.step-one").offset().top - $('nav').height() * 0.5
+        }, 1000, 'swing');
+      });
+
+      $(window).trigger('resize');
+
+    });
+      
+    $(window).scroll(function(){
+        var hightpx = $(window).scrollTop();
+        var elli=$('.top li a');
+        
+        if ( hightpx >= 100 ) {
+            
+			$('.top').addClass('minimenu').animate({top : 0,opacity :1},500);   
+            elli.css({color: 'black',});
+           
+		}
+		else {
+			$('.top').removeClass('minimenu').stop(true,false).removeAttr('style');
+            $('.first-background').removeAttr('style');
+            elli.removeAttr('style');
+		}
+        
+        console.log(hightpx,elli);
+    })
+      
+      
+  </script>
+
+</body>
+</html>
